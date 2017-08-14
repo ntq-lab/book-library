@@ -1,0 +1,18 @@
+{
+  "name": "book-library",
+  "version": "1.0.0",
+  "description": "this is project of ntq-nodejs group",
+  "main": "index.js",
+  "repository": "https://github.com/ntq-lab/book-library",
+  "author": "thaopv <pvthaoit@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./index.js --ignore node_modules --ext js"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
