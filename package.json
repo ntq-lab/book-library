@@ -10,7 +10,9 @@
     "start": "nodemon ./index.js --ignore node_modules --ext js"
   },
   "dependencies": {
-    "express": "^4.15.4"
+    "bluebird": "^3.5.0",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
