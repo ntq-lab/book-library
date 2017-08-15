@@ -1,3 +1,4 @@
+// Todo: use json config and move to folder conf/
 module.exports = {
 	dev: {
 		server: {
