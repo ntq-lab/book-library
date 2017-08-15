@@ -4,7 +4,7 @@ module.exports = {
 			port: 9000
 		},
 		db: {
-			address: 'mongodb://127.0.0.1/booking-library'
+			address: 'mongodb://admin:12345@ds119091.mlab.com:19091/book-library'
 		}
 	}
 };

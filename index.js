@@ -7,8 +7,25 @@ const config = require('./config')[env];
 
 // connect mongodb with mongoose
 const mongoose = require('mongoose');
+
+// default is mPromise
 mongoose.Promise = require('bluebird');
-mongoose.connect(config.db.address);
+mongoose.connect(config.db.address, {
+	useMongoClient: true
+});
+
+const UserModel = require('./models/user')(mongoose);
+// const demoUser = new UserModel({
+// 	email: 'xxx@gmail.com',
+// 	password: new Date(),
+// 	isDelete: false
+// });
+
+// demoUser.save().then(data => {
+// 	console.log(data);
+// }).catch(err => {
+// 	console.log(err);
+// });
 
 // start server
 var server = app.listen(config.server.port, function() {
