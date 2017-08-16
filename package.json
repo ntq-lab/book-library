@@ -10,7 +10,8 @@
     "start": "nodemon ./index.js --ignore node_modules --ext js"
   },
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "pug": "^2.0.0-rc.3"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
