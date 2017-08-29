@@ -5,6 +5,11 @@ module.exports = () => {
 	const self = {};
 
 	self.create = (req, res, next) => {
+		const demoUser = new UserModel({
+			email: 'thao@gmail.com',
+			password: '123'
+		});
+
 		return demoUser.save().then(user => {
 			console.log(user);
 
